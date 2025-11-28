@@ -61,7 +61,7 @@ An interactive data analytics dashboard analyzing historical stock performance o
 
 ### Figure 1: Moving Averages Analysis
 
-![Moving Averages](screenshots/moving_averages.png)
+![Moving Averages](screenshot/moving_averages.png)
 
 **Description:** This figure displays 10-day, 20-day, and 50-day moving averages for all four stocks, showing how these technical indicators smooth out price fluctuations and reveal underlying trends.
 
@@ -80,7 +80,7 @@ An interactive data analytics dashboard analyzing historical stock performance o
 
 ### Figure 2: Long-term Price Trends
 
-![Price Trends](screenshots/price_trends.png)
+![Price Trends](screenshot/price_trends.png)
 
 **Description:** Raw closing price data from 2013-2018 showing the overall trajectory of each stock without smoothing, revealing both long-term trends and short-term volatility.
 
@@ -99,7 +99,7 @@ An interactive data analytics dashboard analyzing historical stock performance o
 
 ### Figure 3: Daily Returns Volatility
 
-![Daily Returns](screenshots/daily_returns.png)
+![Daily Returns](screenshot/daily_returns.png)
 
 **Description:** Daily percentage changes showing the volatility and risk profile of the stock, with returns typically fluctuating between -5% and +5%.
 
@@ -118,7 +118,7 @@ An interactive data analytics dashboard analyzing historical stock performance o
 
 ### Figure 4: Correlation Matrix
 
-![Correlation Scatter Plots](screenshots/correlation_matrix.png)
+![Correlation Scatter Plots](screenshot/correlation_matrix.png)
 
 **Description:** A comprehensive pairplot showing scatter plots and histograms for all stock pairs, revealing the strength and nature of relationships between stocks.
 
@@ -142,7 +142,7 @@ An interactive data analytics dashboard analyzing historical stock performance o
 
 ### Figure 5: Price Correlation Heatmap
 
-![Correlation Heatmap](screenshots/correlation_heatmap.png)
+![Correlation Heatmap](screenshot/correlation_heatmap.png)
 
 **Description:** A correlation matrix heatmap quantifying the relationships between all four tech stocks, with values ranging from 0.64 to 1.0.
 
@@ -220,31 +220,6 @@ On the analytical side, I discovered that **correlation doesn't always mean what
 
 Perhaps the most valuable lesson was about **user experience** - initially, I had focused purely on functionality, but adding interactive elements and clear visualizations transformed this from a data dump into an actual **storytelling tool**. I also learned that **documentation matters as much as code** - creating comprehensive README files and comments made me think more carefully about my design decisions and made the project genuinely portfolio-worthy. The debugging process taught me systematic thinking: when errors occur, work methodically from local to deployment, don't skip steps, and **read error messages carefully** instead of just trying random fixes.
 
----
-
-## Project Structure
-
-```
-tech-stocks-dashboard/
-│
-├── SP500_fixed.py              # Main Streamlit application
-├── requirements.txt            # Python dependencies (unpinned for cloud)
-├── packages.txt               # System dependencies for Streamlit Cloud
-├── README.md                  # Project documentation (this file)
-│
-├── data/                      # Stock data CSV files
-│   ├── AAPL_data.csv         # Apple historical data
-│   ├── AMZN_data.csv         # Amazon historical data
-│   ├── GOOGL_data.csv        # Google historical data
-│   └── MSFT_data.csv         # Microsoft historical data
-│
-└── screenshots/               # Dashboard visualizations
-    ├── moving_averages.png
-    ├── price_trends.png
-    ├── daily_returns.png
-    ├── correlation_matrix.png
-    └── correlation_heatmap.png
-```
 
 ---
 
